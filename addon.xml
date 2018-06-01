@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <addon id="plugin.video.aci"
-       version="0.1.0"
+       version="1.0.0"
        name="ACI"
        provider-name="ACI">
 
@@ -18,13 +18,15 @@
 
     <extension point="xbmc.addon.metadata">
         <summary lang="en">ACI</summary>
-        <description lang="en_GB">Test plugin for ACI.</description>
-        <disclaimer lang="en_GB">This plugin was developed as a test.</disclaimer>
+        <description lang="en_GB">ACI - Arconai TV</description>
+        <disclaimer lang="en_GB">The content presented on the plugin is not affiliated with Kodi/XBMC or
+        any other representations of the Kodi/XBMC Team. The content is not hosted on the plugin and you are
+        advised against using this addon publically. This addon was developed as test of capability only.</disclaimer>
 
         <assets>
             <icon>icon.png</icon>
         </assets>
 
-        <news>Updated to fetch new content.</news>
+        <news>Version 1.0.0 - All content presenting and being retrieved.</news>
     </extension>
 </addon>

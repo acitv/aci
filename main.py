@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import datetime
 import sys
 import urllib
 import urlparse
@@ -9,7 +8,7 @@ import urlparse
 import xbmcgui
 import xbmcplugin
 
-from lib import aci
+import aci
 
 # Get the plugin url in plugin:// notation.
 _url = sys.argv[0]
@@ -112,7 +111,7 @@ def list_categories():
                                     'mediatype': 'video'})
 
         # Create a URL for a plugin recursive call.
-        # Example: plugin://plugin.video.example/?action=listing&category=Animals
+        # Example: plugin://plugin.video.example/?action=listing&category=[category name]
         url = get_url(action="listing", category=category)
         # is_folder = True means that this item opens a sub-list of lower level items.
         is_folder = True
@@ -173,7 +172,7 @@ def list_videos(category):
 
         # Create a URL for a plugin recursive call.
         # Example: plugin://plugin.video.example/?action=play&
-        #                           video=http://www.vidsplay.com/wp-content/uploads/2017/04/crab.mp4
+        #                           video=[video url]
         url = get_url(action='play', video=video_item['url'])
 
         # video_url = 'plugin://plugin.video.f4mTester/?url=' + urllib.quote_plus(video['video']) + \
