@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<addon id="plugin.video.aci"
+       version="0.1.0"
+       name="ACI"
+       provider-name="ACI">
+
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.beautifulsoup" version="3.2.1"/>
+        <import addon="script.module.beautifulsoup4" />
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="main.py">
+      <provides>video</provides>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">ACI</summary>
+        <description lang="en_GB">Test plugin for ACI.</description>
+        <disclaimer lang="en_GB">This plugin was developed as a test.</disclaimer>
+
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+
+        <news>Updated to fetch new content.</news>
+    </extension>
+</addon>
